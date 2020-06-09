@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #22c1c3;
+  background: linear-gradient(208deg, #22c1c3 0%, #fdbb2d 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  font-size: 20px;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container .content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 1100px;
+  max-width: 95vw;
+  margin: 5rem auto;
+}
+
+.title {
+  border: whitesmoke 2px solid;
+  padding: 1rem 2rem;
+  margin: 0 auto 2rem;
+  width: 400px;
+  text-align: center;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.title h2 {
+  letter-spacing: 2px;
+}
+
+.mono {
+  font-family: 'Source Code Pro', sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: whitesmoke 2px solid;
+  padding: 1.3rem;
+}
+
+.flex .image {
+  margin-right: 1rem;
+}
+
+.flex .image img {
+  width: 300px;
+  -webkit-box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.54);
+  box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.54);
+  border: whitesmoke solid 2px;
+}
+
+.flex .about-info {
+  margin-left: 1rem;
+}
+
+.flex .about-info p {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  background: none;
+  text-transform: uppercase;
+  font-family: 'Source Code Pro', sans-serif;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  margin: 1rem auto 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  -webkit-transition: all ease 200ms;
+  transition: all ease 200ms;
+}
+
+.btn:hover {
+  color: grey;
+  background: whitesmoke;
+}
+
+.show {
+  display: none;
+}
+
+.tools {
+  margin: 3rem auto 0;
+  border: whitesmoke 2px solid;
+  padding: 1.3rem;
+  color: whitesmoke;
+}
+
+.tools .tools-title {
+  margin: 0.5rem auto 1.3rem;
+}
+
+.tools .open-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tools .flex-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.tools .flex-tools h3 {
+  font-size: 3rem;
+  margin: 0.5rem 2rem;
+  letter-spacing: 4px;
+}
+
+.tools .close-tools {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.tools .close-tools:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer {
+  width: 1200px;
+  max-width: 95vw;
+  margin: 0 auto 1rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:hover {
+  color: #145455;
+}
+
+@media (max-width: 800px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flex .image {
+    margin: 0 auto 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    width: 300px;
+  }
+  .flex .about-info {
+    margin-left: 0;
+  }
+  .flex .about-info p {
+    font-size: 1.5rem;
+  }
+  .btns {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 380px) {
+  .btn {
+    padding: 1rem 1.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

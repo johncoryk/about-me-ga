@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: orange 1px solid;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    208deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  font-size: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .content {
+    flex-grow: 1;
+    width: 1100px;
+    max-width: 95vw;
+    margin: 5rem auto;
+  }
+}
+
+.title {
+  border: whitesmoke 2px solid;
+  padding: 1rem 2rem;
+  margin: 0 auto 2rem;
+  width: 400px;
+  text-align: center;
+  color: whitesmoke;
+  text-transform: uppercase;
+
+  h2 {
+    letter-spacing: 2px;
+  }
+}
+
+.mono {
+  font-family: 'Source Code Pro', sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: whitesmoke 2px solid;
+  padding: 1.3rem;
+
+  .image {
+    margin-right: 1rem;
+    img {
+      width: 300px;
+      -webkit-box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.54);
+      -moz-box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.54);
+      box-shadow: 10px 10px 8px -7px rgba(0, 0, 0, 0.54);
+      border: whitesmoke solid 2px;
+    }
+  }
+
+  .about-info {
+    margin-left: 1rem;
+
+    p {
+      font-size: 2rem;
+      color: whitesmoke;
+    }
+  }
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  background: none;
+  text-transform: uppercase;
+  font-family: 'Source Code Pro', sans-serif;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  margin: 1rem auto 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all ease 200ms;
+
+  &:hover {
+    color: grey;
+    background: whitesmoke;
+  }
+}
+
+.show {
+  display: none;
+}
+
+.tools {
+  margin: 3rem auto 0;
+  border: whitesmoke 2px solid;
+  padding: 1.3rem;
+  color: whitesmoke;
+
+  .tools-title {
+    margin: 0.5rem auto 1.3rem;
+  }
+
+  .open-tools {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-tools {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+    h3 {
+      font-size: 3rem;
+      margin: 0.5rem 2rem;
+      letter-spacing: 4px;
+    }
+  }
+
+  .close-tools {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.footer {
+  width: 1200px;
+  max-width: 95vw;
+  margin: 0 auto 1rem;
+  color: whitesmoke;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: rgb(20, 84, 85);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+    justify-content: space-between;
+
+    .image {
+      margin: 0 auto 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    width: 300px;
+  }
+
+  .flex {
+    .about-info {
+      margin-left: 0;
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .btns {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 380px) {
+  .btn {
+    padding: 1rem 1.5rem;
+  }
+}
